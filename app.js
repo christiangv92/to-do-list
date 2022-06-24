@@ -1,6 +1,7 @@
 const addForm = document.querySelector('.add');
 const list = document.querySelector('.todos');
 const search = document.querySelector('.search input');
+const button = document.querySelector('.add button');
 
 const generateTemplate = todo => {
     const html = ` 
@@ -13,6 +14,17 @@ const generateTemplate = todo => {
 };
 
 addForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const todo = addForm.add.value.trim();
+    console.log(todo);
+
+    if(todo.length) {
+     generateTemplate(todo);
+     addForm.reset();
+    }
+});
+
+button.addEventListener('click', e => {
     e.preventDefault();
     const todo = addForm.add.value.trim();
     console.log(todo);

@@ -1,36 +1,45 @@
 body {
-    background: #E0FFFF;
-  }
+  background: #E0FFFF;
+}
 
-  .container {
-    max-width: 400px;
-  }
+body h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 46px;
+}
 
-  input[type=text],
-  input[type=text]:focus{
-    color: rgb(0, 0, 0);
-    border-color: rgb(0, 0, 0);
-    background: rgba(0,0,0,0.2);
-    max-width: 400px;
-  }
+.container {
+  max-width: 400px;
+}
 
-  .todos li {
-    background: #AFEEEE;
-    color: rgb(0, 0, 0);
-    border-color: rgb(0, 0, 0);
-  }
+input[type=text],
+input[type=text]:focus {
+  color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
 
-  .delete {
-    cursor: pointer;
-  }
+.todos li {
+  background: #48D1CC;
+  color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
+}
 
-  .filtered {
-    display: none !important;
-  }
+.delete {
+  cursor: pointer;
+}
+
+.filtered {
+  display: none !important;
+}
 
 footer {
-    position: absolute;
-    height: 45px;
-    bottom: 0;
-    width: 100%;
+  position: absolute;
+  height: 45px;
+  bottom: 0;
+  width: 100%;
+}
+
+button {
+  color: black;
 }
